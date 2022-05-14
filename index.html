@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>child selector</title>
+        <style>
+            div#a > div#b > div#c {
+                color:red;
+            }
+            .x1{
+                background-color:lightgreen
+            }
+            .x2{
+                background-color:pink;
+            }
+            .x3{
+                background-color:lightcoral;
+            }
+            .x{
+                text-align:center;
+            }
+            div#a,div#b,div#c{
+                text-decoration:underline;
+
+            }
+            #a :hover{
+                color:white;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="a" class="x x1">grandparent
+            <div id="b" class="x x2">parent
+                <div id="c" class="x x3">child </div>
+            </div>
+        </div>
+        <p class="x x1">grandparent1
+            <p class="x x2">parent1
+                <p class="x x3">child1</p>
+            </p>
+        </p>
+    </body>
+</html>
